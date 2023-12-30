@@ -405,10 +405,10 @@ plt.xlabel('Predicted label')
 
 ![matrix pn](https://github.com/ardinursahwal/travel-insurance-predict/assets/148542995/c2114577-57ff-4c8b-9963-181cf6fc7d40)
 
-Dari hasil confusion matrixnya dapat kita lihat 
-Ada 251 prediksi yang benar bahwa bukan kelas positif (True Negative).
-Terdapat 1 prediksi yang salah bahwa itu kelas positif (False Positive).
-Ada 63 prediksi yang salah bahwa itu bukan kelas positif (False Negative).
+Dari hasil confusion matrixnya dapat kita lihat   
+Ada 251 prediksi yang benar bahwa bukan kelas positif (True Negative).  
+Terdapat 1 prediksi yang salah bahwa itu kelas positif (False Positive).  
+Ada 63 prediksi yang salah bahwa itu bukan kelas positif (False Negative).  
 Terdapat 77 prediksi yang benar bahwa itu kelas positif (True Positive).
 
 ## Deployment
