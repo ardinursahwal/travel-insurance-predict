@@ -5,7 +5,6 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
-from sklearn.model_selection import  GridSearchCV
 from sklearn.preprocessing import MinMaxScaler
 
 @st.cache_data()
@@ -28,6 +27,9 @@ def load_data():
 @st.cache_data()
 def train_model(x,y):
   x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=101)
+  mscale=MinMaxScaler()
+  mscale.fit_transform(x_train)
+  mscale.transform(x_test)
   # Melakukan pemangkasan (post-pruning) menggunakan ccp_alpha=0.013
   model = DecisionTreeClassifier(random_state=0, ccp_alpha=0.013)
   model.fit(x_train, y_train)
