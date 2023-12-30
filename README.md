@@ -162,6 +162,15 @@ plt.show()
 
 ![family](https://github.com/ardinursahwal/travel-insurance-predict/assets/148542995/c1fef503-ab18-467d-a89e-5ec735c6350e)
 
+Umur 28 paling banyak dan 35 paling rendah tetapi 34 paling banyak kedua setelah 28
+
+```python
+sns.countplot(x='Age',data=df)
+plt.show()
+```
+
+![age](https://github.com/ardinursahwal/travel-insurance-predict/assets/148542995/ca009b75-d907-47ca-a46f-018f675f21de)
+
 Menampilkan pelanggan yang pernah melakukan perjalanan ke luar negeri dan tidak, sebanyak 72,2% tidak pernah melakukan perjalanan ke luar negeri
 
 ```python
